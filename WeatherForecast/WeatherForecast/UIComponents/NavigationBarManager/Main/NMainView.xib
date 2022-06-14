@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NMainView" customModule="WeatherForecast" customModuleProvider="target">
+            <connections>
+                <outlet property="searchView" destination="wDl-sb-k38" id="okd-Fm-WGB"/>
+                <outlet property="titleLb" destination="Enm-O5-YhM" id="sSn-wi-RVC"/>
+                <outlet property="view" destination="wTU-6h-qNL" id="5gZ-h8-GfY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wTU-6h-qNL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDl-sb-k38" userLabel="searchView">
+                    <rect key="frame" x="18" y="85" width="378" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nj8-o7-Y3o"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enm-O5-YhM" userLabel="titleLb">
+                    <rect key="frame" x="4" y="32" width="406" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Enm-O5-YhM" firstAttribute="leading" secondItem="wTU-6h-qNL" secondAttribute="leading" constant="4" id="AL5-lC-xqH"/>
+                <constraint firstAttribute="trailing" secondItem="wDl-sb-k38" secondAttribute="trailing" constant="18" id="LpX-Na-Btd"/>
+                <constraint firstItem="wDl-sb-k38" firstAttribute="leading" secondItem="wTU-6h-qNL" secondAttribute="leading" constant="18" id="cYj-56-0hP"/>
+                <constraint firstItem="wDl-sb-k38" firstAttribute="top" secondItem="Enm-O5-YhM" secondAttribute="bottom" constant="4" id="dBZ-i1-0cE"/>
+                <constraint firstAttribute="trailing" secondItem="Enm-O5-YhM" secondAttribute="trailing" constant="4" id="i8s-yq-hYL"/>
+                <constraint firstItem="Enm-O5-YhM" firstAttribute="top" secondItem="wTU-6h-qNL" secondAttribute="top" constant="32" id="jLN-Tu-152"/>
+                <constraint firstAttribute="bottom" secondItem="wDl-sb-k38" secondAttribute="bottom" constant="17" id="pfw-oC-7CQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="218.84057971014494" y="-237.05357142857142"/>
+        </view>
+    </objects>
+</document>

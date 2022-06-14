@@ -1,0 +1,8 @@
+"general.alert.connection_timeout.title" = "Timeout";
+"general.alert.connection_timeout.message" = "Connection Timout!.\nPlease Try Again";
+"general.alert.generic_error.title" = "Error";
+"general.alert.generic_error.message" = "Please Try Again\n";
+"general.alert.action.ok" = "OK";
+
+// MARK: - Dashboard
+"dashboard.title" = "Weather Forecast";
