@@ -1,0 +1,17 @@
+strings:
+  inputs: WeatherForecast/Resources/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: WeatherForecast/SwiftGen/Strings.swift
+
+xcassets:
+  inputs: WeatherForecast/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: WeatherForecast/SwiftGen/Assets.swift
+
+fonts:
+  inputs: WeatherForecast/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: WeatherForecast/SwiftGen/Fonts.swift

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NDefaultView" customModule="WeatherForecast" customModuleProvider="target">
+            <connections>
+                <outlet property="actionBtn" destination="2BT-Uf-H2B" id="lJp-E4-haL"/>
+                <outlet property="backgroundImageView" destination="pSD-NC-ZqZ" id="doc-kQ-xrX"/>
+                <outlet property="logoImageView" destination="F7c-jK-kfQ" id="axM-bp-LRK"/>
+                <outlet property="rightActionBtn" destination="0Im-03-URH" id="ZNK-Wc-YSs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rkf-Jl-TSX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-NC-ZqZ" userLabel="backgroundImageView">
+                    <rect key="frame" x="-2" y="-2" width="418" height="92"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-jK-kfQ" userLabel="logoImageView">
+                    <rect key="frame" x="16" y="53" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="AHT-AU-Rcf"/>
+                        <constraint firstAttribute="width" constant="24" id="cVA-rv-KGb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BT-Uf-H2B" userLabel="actionBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="txj-Yr-WdU"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onActionBtn:" destination="-1" eventType="touchUpInside" id="jcC-pN-1UV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Im-03-URH" userLabel="rightActionBtn">
+                    <rect key="frame" x="344" y="0.0" width="70" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Eh9-gu-UPL"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="onRightActionBtn:" destination="-1" eventType="touchUpInside" id="IjL-Sg-P4b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pSD-NC-ZqZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-2" id="8Zg-Yj-xy9"/>
+                <constraint firstAttribute="trailing" secondItem="0Im-03-URH" secondAttribute="trailing" id="AqO-71-Onw"/>
+                <constraint firstItem="2BT-Uf-H2B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BDv-S2-0tS"/>
+                <constraint firstItem="0Im-03-URH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Crm-ka-6Fu"/>
+                <constraint firstAttribute="bottom" secondItem="0Im-03-URH" secondAttribute="bottom" id="D8s-F1-cQT"/>
+                <constraint firstItem="F7c-jK-kfQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Gyi-hh-tZH"/>
+                <constraint firstAttribute="bottom" secondItem="pSD-NC-ZqZ" secondAttribute="bottom" constant="-2" id="b07-eM-ydl"/>
+                <constraint firstAttribute="bottom" secondItem="2BT-Uf-H2B" secondAttribute="bottom" id="gMT-Qz-ifV"/>
+                <constraint firstItem="pSD-NC-ZqZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-2" id="n4B-Je-XCu"/>
+                <constraint firstAttribute="trailing" secondItem="pSD-NC-ZqZ" secondAttribute="trailing" constant="-2" id="trN-AQ-ejd"/>
+                <constraint firstItem="2BT-Uf-H2B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vB2-RT-AGZ"/>
+                <constraint firstAttribute="bottom" secondItem="F7c-jK-kfQ" secondAttribute="bottom" constant="11" id="wOf-rF-U6d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+    </resources>
+</document>
