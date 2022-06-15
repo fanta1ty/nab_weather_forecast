@@ -4,12 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="WeatherForecast" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="Qb2-G2-4KR" id="cRI-qf-mnF"/>
+                <outlet property="mainTableView" destination="Mgb-JZ-Ybt" id="dfn-bf-vj7"/>
                 <outlet property="topConstraint" destination="EAN-0f-6YX" id="a8c-zn-Vlz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,7 +23,20 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-G2-4KR" userLabel="containerView">
                     <rect key="frame" x="0.0" y="44" width="414" height="858"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mgb-JZ-Ybt" userLabel="mainTableView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="858"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Mgb-JZ-Ybt" firstAttribute="top" secondItem="Qb2-G2-4KR" secondAttribute="top" id="LRW-DD-jqQ"/>
+                        <constraint firstItem="Mgb-JZ-Ybt" firstAttribute="leading" secondItem="Qb2-G2-4KR" secondAttribute="leading" id="YTz-Wl-FjL"/>
+                        <constraint firstAttribute="trailing" secondItem="Mgb-JZ-Ybt" secondAttribute="trailing" id="mhW-wI-FeE"/>
+                        <constraint firstAttribute="bottom" secondItem="Mgb-JZ-Ybt" secondAttribute="bottom" id="sQg-Xu-Jdn"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -41,4 +56,9 @@
             <point key="canvasLocation" x="134.78260869565219" y="112.5"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

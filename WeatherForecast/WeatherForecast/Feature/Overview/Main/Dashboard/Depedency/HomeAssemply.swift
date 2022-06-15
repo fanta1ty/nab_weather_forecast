@@ -12,8 +12,11 @@ final class HomeAssemply: Assembly {
             return HomeViewModelImpl(interactor: interactor)
         }
         
-        container.register(HomeInteractable.self) { _ in
-            return HomeInteractor(usecases: [])
+        container.register(HomeInteractable.self) { resolver in
+            guard let forecastUseCase = resolver.resolve(ForecastUseCase.self)
+            else { fatalError("can't resolve ForecastUseCase") }
+            
+            return HomeInteractor(forecastUseCase: forecastUseCase)
         }
     }
 }

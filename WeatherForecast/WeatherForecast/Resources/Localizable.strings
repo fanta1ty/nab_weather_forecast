@@ -6,3 +6,12 @@
 
 // MARK: - Dashboard
 "dashboard.title" = "Weather Forecast";
+
+"dashboard.forecast.cell.date.title" = "Date: ";
+"dashboard.forecast.cell.average.temperature.title" = "Average Temperature: ";
+"dashboard.forecast.cell.average.temperature.unit" = "℃";
+"dashboard.forecast.cell.pressure.title" = "Pressure: ";
+"dashboard.forecast.cell.humidity.title" = "Humidity: ";
+"dashboard.forecast.cell.humidity.unit" = "%";
+"dashboard.forecast.cell.desc.title" = "Description: ";
+"dashboard.forecast.cell.cond.title" = "The Weather is ";

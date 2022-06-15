@@ -29,10 +29,6 @@ class AppConfiguration {
 // MARK: UrlProvider
 extension AppConfiguration: UrlProvider {
     var serverBaseURL: String? {
-        #if MOCK
-        return value(for: ConfigurationKey.Url.serverMockBaseUrl)
-        #else
         return value(for: ConfigurationKey.Url.serverBaseUrl)
-        #endif
     }
 }
