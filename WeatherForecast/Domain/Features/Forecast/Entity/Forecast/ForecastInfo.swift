@@ -30,3 +30,14 @@ class ForecastInfo {
         self.list = []
     }
 }
+
+// MARK: - Equatable
+extension ForecastInfo: Equatable {
+    static func == (lhs: ForecastInfo, rhs: ForecastInfo) -> Bool {
+        return lhs.city == rhs.city &&
+        lhs.cod == rhs.cod &&
+        lhs.message == rhs.message &&
+        lhs.cnt == rhs.cnt &&
+        lhs.list.count == rhs.list.count
+    }
+}

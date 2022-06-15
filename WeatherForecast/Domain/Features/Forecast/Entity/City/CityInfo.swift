@@ -39,3 +39,14 @@ class CityInfo {
     }
 }
 
+// MARK: - Equatable
+extension CityInfo: Equatable {
+    static func == (lhs: CityInfo, rhs: CityInfo) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.coord == rhs.coord &&
+        lhs.country == rhs.country &&
+        lhs.population == rhs.population &&
+        lhs.timezone == rhs.timezone
+    }
+}
