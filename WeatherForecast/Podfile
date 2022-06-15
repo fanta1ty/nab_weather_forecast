@@ -5,7 +5,6 @@ RX_VERSION = '5.1.1'
 ALAMOFIRE_VERSION = '4.9.1'
 SWINJECT_VERSION = '2.7.1'
 SWIFTLINT_VERSION = '0.35.0'
-LIFETIMETRACKER_VERSION = '1.7.1'
 IQKEYBOARDMANAGER_VERSION = '6.5.5'
 SKELETON_VERSION = '1.9'
 SNAPKIT_VERSION = '5.0.1'
@@ -17,7 +16,6 @@ def dependendcy
   pod 'RxCocoa', RX_VERSION
   pod 'SwiftLint', SWIFTLINT_VERSION
   pod 'Alamofire', ALAMOFIRE_VERSION
-  pod 'LifetimeTracker', LIFETIMETRACKER_VERSION
   pod 'Swinject', SWINJECT_VERSION
   pod 'IQKeyboardManagerSwift', IQKEYBOARDMANAGER_VERSION
   pod 'SkeletonView', SKELETON_VERSION
@@ -43,9 +41,4 @@ target 'WeatherForecast' do
     # Pods for testing
     test_dependendcy
   end
-
-  target 'WeatherForecastUITests' do
-    # Pods for testing
-  end
-
 end

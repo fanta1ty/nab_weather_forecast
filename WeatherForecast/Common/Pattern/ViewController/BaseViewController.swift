@@ -1,18 +1,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import LifetimeTracker
 
 protocol BaseViewProtocol {
     var isTheFirstViewFlow: Bool { get set }
 }
 
-class BaseViewController<ViewModel>: UIViewController, LifetimeTrackable, BaseViewProtocol {
+class BaseViewController<ViewModel>: UIViewController, BaseViewProtocol {
     var isTheFirstViewFlow: Bool = false
-    
-    class var lifetimeConfiguration: LifetimeConfiguration {
-        return LifetimeConfiguration(maxCount: 1, groupName: "VC")
-    }
     
     var localization: Localizable!
     var viewModel: ViewModel!
@@ -40,7 +35,6 @@ class BaseViewController<ViewModel>: UIViewController, LifetimeTrackable, BaseVi
         bindGenericException()
         
         bindNetworkErrorException()
-        trackLifetime()
         bindLoadingState(viewModel: viewModel)
     }
     

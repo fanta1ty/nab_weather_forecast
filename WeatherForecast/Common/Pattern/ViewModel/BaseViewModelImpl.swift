@@ -1,7 +1,6 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import LifetimeTracker
 
 protocol BaseViewModel {
     var baseInput: BaseViewModelInput { get }
@@ -24,11 +23,7 @@ protocol BaseViewModelOutput {
     var onLoadingProgress: Driver<Bool> { get }
 }
 
-class BaseViewModelImpl: LifetimeTrackable {
-    class var lifetimeConfiguration: LifetimeConfiguration {
-        return LifetimeConfiguration(maxCount: 1, groupName: "ViewModel")
-    }
-    
+class BaseViewModelImpl {
     let onGenericBussinessErrorSubject = PublishSubject<BaseErrorException>()
     let onNetworkErrorSubject = PublishSubject<BaseErrorException>()
     let onSessionTokenExpiredSubject = PublishSubject<BaseErrorException>()
@@ -74,8 +69,6 @@ class BaseViewModelImpl: LifetimeTrackable {
             
             self.viewDidDisappear()
         }).disposed(by: disposeBag)
-        
-        trackLifetime()
     }
 
     func viewDidLoad() { }
