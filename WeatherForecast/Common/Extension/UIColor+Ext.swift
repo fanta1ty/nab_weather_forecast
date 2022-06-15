@@ -32,17 +32,4 @@ extension UIColor {
                   blue: CGFloat(blue) / 255,
                   alpha: CGFloat(alpha) / 255)
     }
-    
-    static func getGradientRandom() -> (UIColor, UIColor) {
-        return
-            [(UIColor(hex: "EDF7F2"), UIColor(hex: "C7E6D4")),
-             (UIColor(hex: "FFFFFF"), UIColor(hex: "EEF0F5")),
-             (UIColor(hex: "FCF8E8"), UIColor(hex: "F3E3A0")),
-             (UIColor(hex: "ECEEF8"), UIColor(hex: "C7CBEA")),
-             (UIColor(hex: "F8ECF5"), UIColor(hex: "EED2E7")),
-             (UIColor(hex: "EEF0F7"), UIColor(hex: "D6DBEB")),
-             (UIColor(hex: "F4F7ED"), UIColor(hex: "D4DFB9")),
-             (UIColor(hex: "FAEBEB"), UIColor(hex: "F0C2C2")),
-             (UIColor(hex: "ECF4F9"), UIColor(hex: "C6DEEC"))].randomElement()!
-    }
 }

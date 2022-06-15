@@ -1,13 +1,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import LifetimeTracker
 
-class BaseCoordinator<CoordinatorResult, T: Dependency>: NSObject, Coordinator, LifetimeTrackable {
-    class var lifetimeConfiguration: LifetimeConfiguration {
-        return LifetimeConfiguration(maxCount: 1, groupName: "VC")
-    }
-
+class BaseCoordinator<CoordinatorResult, T: Dependency>: NSObject, Coordinator {
     typealias ResultType = CoordinatorResult
 
     var identifier = UUID()
@@ -21,7 +16,6 @@ class BaseCoordinator<CoordinatorResult, T: Dependency>: NSObject, Coordinator, 
         self.dependency = dependency
         super.init()
         viewModelBinding()
-        trackLifetime()
     }
     
     deinit {
