@@ -8,6 +8,7 @@ final class NMainView: UIView {
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var titleLb: UILabel!
     
+    var searchBar: SearchBarView!
     var searchTextDidChange: ((String) -> Void)?
     
     required init?(coder: NSCoder) {
@@ -50,7 +51,7 @@ extension NMainView {
         view.fixInView(self)
         titleLb.font = ProjectFont.textMedium(size: 17).value
         
-        let searchBar = SearchBarView.defaultSearchBar()
+        searchBar = SearchBarView.defaultSearchBar()
         searchBar.config.useCancelButton = true
         searchBar.delegate = self
         

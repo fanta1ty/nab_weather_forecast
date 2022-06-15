@@ -8,9 +8,9 @@ protocol HomeViewModel: BaseViewModel {
 }
 
 protocol HomeViewModelInput {
-    
+    var startSearchForecast: AnyObserver<String> { get }
 }
 
 protocol HomeViewModelOutput {
-    
+    var onForecastResponse: Driver<ForecastInfo> { get }
 }

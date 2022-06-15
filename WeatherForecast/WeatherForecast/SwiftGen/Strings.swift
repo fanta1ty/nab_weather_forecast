@@ -14,6 +14,40 @@ internal enum L10n {
   internal enum Dashboard {
     /// Weather Forecast
     internal static let title = L10n.tr("Localizable", "dashboard.title")
+    internal enum Forecast {
+      internal enum Cell {
+        internal enum Average {
+          internal enum Temperature {
+            /// Average Temperature: 
+            internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.average.temperature.title")
+            /// ℃
+            internal static let unit = L10n.tr("Localizable", "dashboard.forecast.cell.average.temperature.unit")
+          }
+        }
+        internal enum Cond {
+          /// The Weather is 
+          internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.cond.title")
+        }
+        internal enum Date {
+          /// Date: 
+          internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.date.title")
+        }
+        internal enum Desc {
+          /// Description: 
+          internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.desc.title")
+        }
+        internal enum Humidity {
+          /// Humidity: 
+          internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.humidity.title")
+          /// %
+          internal static let unit = L10n.tr("Localizable", "dashboard.forecast.cell.humidity.unit")
+        }
+        internal enum Pressure {
+          /// Pressure: 
+          internal static let title = L10n.tr("Localizable", "dashboard.forecast.cell.pressure.title")
+        }
+      }
+    }
   }
 
   internal enum General {

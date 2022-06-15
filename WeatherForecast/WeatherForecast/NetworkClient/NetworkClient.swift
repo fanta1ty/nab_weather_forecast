@@ -78,7 +78,7 @@ public class NetworkClient {
                     switch response.result {
                     case .failure(_):
                         let errorException = ApiException(errorCode: 500,
-                                                          message: "Odoo Server Error")
+                                                          message: "Server Error")
                         
                         self.handleError(errorException, with: response,
                                          parser: parser,
@@ -142,16 +142,6 @@ public class NetworkClient {
             
             let resultData = "\(dataDecoded)"
             Log.d("  - Response dataDecoded - \(resultData)")
-            if resultData.contains("uid") {
-                Log.d("\n\n  ---- Response Login ---- \n\n")
-                let responseHeader = response.headers["Set-Cookie"]
-                let cookieHeader = "\(String(describing: responseHeader))"
-                if !cookieHeader.isEmpty {
-                    let cookie = cookieHeader.components(separatedBy: "; ")
-                    AppSessionManager.shared.authorizationToken = cookie[0]
-                }
-            }
-            
             observer.onNext(dataDecoded)
             observer.onCompleted()
         } catch let error {

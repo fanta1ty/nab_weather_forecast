@@ -25,12 +25,7 @@ enum LogEvent: String {
 /// - Parameter object: The object which is to be logged
 ///
 func print(_ object: Any) {
-    // Only allowing in DEBUG mode
-    #if DEBUG
     Swift.print(object)
-    #elseif MOCK
-    Swift.print(object)
-    #endif
 }
 
 class Log {
@@ -45,13 +40,7 @@ class Log {
     }
     
     private static var isLoggingEnabled: Bool {
-        #if DEBUG
         return true
-        #elseif MOCK
-        return true
-        #else
-        return false
-        #endif
     }
     
     // MARK: - Loging methods
