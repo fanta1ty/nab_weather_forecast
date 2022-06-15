@@ -16,11 +16,12 @@
 		CE0BEBA728599888000A2CFA /* ForecastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BEBA628599888000A2CFA /* ForecastUseCase.swift */; };
 		CE0BEBA9285998B9000A2CFA /* ForecastUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BEBA8285998B9000A2CFA /* ForecastUseCaseImpl.swift */; };
 		CE0BEBAC2859A384000A2CFA /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BEBAB2859A384000A2CFA /* ForecastTableViewCell.swift */; };
+		CE0BEBB12859CF25000A2CFA /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BEBB02859CF25000A2CFA /* HomeViewModelTest.swift */; };
+		CE0BEBB32859CFEE000A2CFA /* HomeInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BEBB22859CFEE000A2CFA /* HomeInteractorMock.swift */; };
 		CE9F9FF22858816D00E30F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F9FF12858816D00E30F10 /* AppDelegate.swift */; };
 		CE9F9FF42858816D00E30F10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F9FF32858816D00E30F10 /* SceneDelegate.swift */; };
 		CE9F9FFB2858816F00E30F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9F9FFA2858816F00E30F10 /* Assets.xcassets */; };
 		CE9F9FFE2858816F00E30F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F9FFC2858816F00E30F10 /* LaunchScreen.storyboard */; };
-		CE9FA0092858816F00E30F10 /* WeatherForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA0082858816F00E30F10 /* WeatherForecastTests.swift */; };
 		CE9FA0132858816F00E30F10 /* WeatherForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA0122858816F00E30F10 /* WeatherForecastUITests.swift */; };
 		CE9FA0152858816F00E30F10 /* WeatherForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA0142858816F00E30F10 /* WeatherForecastUITestsLaunchTests.swift */; };
 		CE9FA03A2858829800E30F10 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA0232858829800E30F10 /* TextStyle.swift */; };
@@ -135,8 +136,6 @@
 		CE9FA7D32858858200E30F10 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA3C52858857E00E30F10 /* SplashCoordinator.swift */; };
 		CE9FA7D42858858200E30F10 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA3C72858857E00E30F10 /* SplashViewController.swift */; };
 		CE9FA7D52858858200E30F10 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9FA3C82858857E00E30F10 /* SplashViewController.xib */; };
-		CE9FA7D62858858200E30F10 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA3CA2858857E00E30F10 /* SplashInteractor.swift */; };
-		CE9FA7D72858858200E30F10 /* SplashInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA3CB2858857E00E30F10 /* SplashInteractable.swift */; };
 		CE9FA7FF2858858300E30F10 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA4152858857F00E30F10 /* TabbarViewModel.swift */; };
 		CE9FA8002858858300E30F10 /* TabbarViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA4162858857F00E30F10 /* TabbarViewModelImpl.swift */; };
 		CE9FA8012858858300E30F10 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA4182858857F00E30F10 /* TabbarCoordinator.swift */; };
@@ -144,8 +143,6 @@
 		CE9FA8032858858300E30F10 /* TabbarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA41B2858857F00E30F10 /* TabbarAssembly.swift */; };
 		CE9FA8042858858300E30F10 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9FA41D2858857F00E30F10 /* TabbarViewController.xib */; };
 		CE9FA8052858858300E30F10 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA41E2858857F00E30F10 /* TabbarViewController.swift */; };
-		CE9FA8062858858300E30F10 /* TabbarInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA4202858857F00E30F10 /* TabbarInteractable.swift */; };
-		CE9FA8072858858300E30F10 /* TabbarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA4212858857F00E30F10 /* TabbarInteractor.swift */; };
 		CE9FA8BE2858858400E30F10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA5542858858000E30F10 /* HomeViewModel.swift */; };
 		CE9FA8BF2858858400E30F10 /* HomeViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA5552858858000E30F10 /* HomeViewModelImpl.swift */; };
 		CE9FA8C02858858400E30F10 /* HomeAssemply.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA5572858858000E30F10 /* HomeAssemply.swift */; };
@@ -209,6 +206,8 @@
 		CE0BEBA628599888000A2CFA /* ForecastUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUseCase.swift; sourceTree = "<group>"; };
 		CE0BEBA8285998B9000A2CFA /* ForecastUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUseCaseImpl.swift; sourceTree = "<group>"; };
 		CE0BEBAB2859A384000A2CFA /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		CE0BEBB02859CF25000A2CFA /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		CE0BEBB22859CFEE000A2CFA /* HomeInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorMock.swift; sourceTree = "<group>"; };
 		CE9F9FEE2858816D00E30F10 /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F9FF12858816D00E30F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F9FF32858816D00E30F10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,7 +215,6 @@
 		CE9F9FFD2858816F00E30F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9F9FFF2858816F00E30F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9FA0042858816F00E30F10 /* WeatherForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9FA0082858816F00E30F10 /* WeatherForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastTests.swift; sourceTree = "<group>"; };
 		CE9FA00E2858816F00E30F10 /* WeatherForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9FA0122858816F00E30F10 /* WeatherForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastUITests.swift; sourceTree = "<group>"; };
 		CE9FA0142858816F00E30F10 /* WeatherForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -332,8 +330,6 @@
 		CE9FA3C52858857E00E30F10 /* SplashCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		CE9FA3C72858857E00E30F10 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CE9FA3C82858857E00E30F10 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		CE9FA3CA2858857E00E30F10 /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
-		CE9FA3CB2858857E00E30F10 /* SplashInteractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractable.swift; sourceTree = "<group>"; };
 		CE9FA4152858857F00E30F10 /* TabbarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
 		CE9FA4162858857F00E30F10 /* TabbarViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewModelImpl.swift; sourceTree = "<group>"; };
 		CE9FA4182858857F00E30F10 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
@@ -341,8 +337,6 @@
 		CE9FA41B2858857F00E30F10 /* TabbarAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
 		CE9FA41D2858857F00E30F10 /* TabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
 		CE9FA41E2858857F00E30F10 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
-		CE9FA4202858857F00E30F10 /* TabbarInteractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInteractable.swift; sourceTree = "<group>"; };
-		CE9FA4212858857F00E30F10 /* TabbarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarInteractor.swift; sourceTree = "<group>"; };
 		CE9FA5542858858000E30F10 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CE9FA5552858858000E30F10 /* HomeViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelImpl.swift; sourceTree = "<group>"; };
 		CE9FA5572858858000E30F10 /* HomeAssemply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAssemply.swift; sourceTree = "<group>"; };
@@ -463,6 +457,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CE0BEBAD2859CE97000A2CFA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BEBB02859CF25000A2CFA /* HomeViewModelTest.swift */,
+				CE0BEBAE2859CEAF000A2CFA /* Mock */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CE0BEBAE2859CEAF000A2CFA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BEBB22859CFEE000A2CFA /* HomeInteractorMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		CE9F9FE52858816C00E30F10 = {
 			isa = PBXGroup;
 			children = (
@@ -508,7 +519,7 @@
 		CE9FA0072858816F00E30F10 /* WeatherForecastTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9FA0082858816F00E30F10 /* WeatherForecastTests.swift */,
+				CE0BEBAD2859CE97000A2CFA /* Dashboard */,
 			);
 			path = WeatherForecastTests;
 			sourceTree = "<group>";
@@ -998,7 +1009,6 @@
 			children = (
 				CE9FA3C42858857E00E30F10 /* Coordinator */,
 				CE9FA3C12858857E00E30F10 /* Depedency */,
-				CE9FA3C92858857E00E30F10 /* Interactor */,
 				CE9FA3C62858857E00E30F10 /* View */,
 				CE9FA3BE2858857E00E30F10 /* ViewModel */,
 			);
@@ -1040,15 +1050,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CE9FA3C92858857E00E30F10 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FA3CA2858857E00E30F10 /* SplashInteractor.swift */,
-				CE9FA3CB2858857E00E30F10 /* SplashInteractable.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		CE9FA3FE2858857F00E30F10 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
@@ -1065,7 +1066,6 @@
 				CE9FA4172858857F00E30F10 /* Coordinator */,
 				CE9FA4192858857F00E30F10 /* Dependency */,
 				CE9FA41C2858857F00E30F10 /* View */,
-				CE9FA41F2858857F00E30F10 /* Interactor */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -1103,15 +1103,6 @@
 				CE9FA41E2858857F00E30F10 /* TabbarViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		CE9FA41F2858857F00E30F10 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FA4202858857F00E30F10 /* TabbarInteractable.swift */,
-				CE9FA4212858857F00E30F10 /* TabbarInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		CE9FA5412858858000E30F10 /* Main */ = {
@@ -1438,6 +1429,7 @@
 					};
 					CE9FA0032858816F00E30F10 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = CE9F9FED2858816D00E30F10;
 					};
 					CE9FA00D2858816F00E30F10 = {
@@ -1665,7 +1657,6 @@
 				CE9FA2C4285882AE00E30F10 /* Error.swift in Sources */,
 				CE9FA0482858829800E30F10 /* NavigationBarStylist.swift in Sources */,
 				CE9FA20F285882AE00E30F10 /* NoContentBodyResponse.swift in Sources */,
-				CE9FA8072858858300E30F10 /* TabbarInteractor.swift in Sources */,
 				CE9FA03B2858829800E30F10 /* FontStyleProvider.swift in Sources */,
 				CE9FA216285882AE00E30F10 /* Networking.swift in Sources */,
 				CEE3052C285990B00006BA92 /* RequiredWeatherForecastParameter.swift in Sources */,
@@ -1673,7 +1664,6 @@
 				CE9F9FF22858816D00E30F10 /* AppDelegate.swift in Sources */,
 				CE9FA0432858829800E30F10 /* FontCollection.swift in Sources */,
 				CE0BEBA9285998B9000A2CFA /* ForecastUseCaseImpl.swift in Sources */,
-				CE9FA7D62858858200E30F10 /* SplashInteractor.swift in Sources */,
 				CE9FA0422858829800E30F10 /* FontDescription.swift in Sources */,
 				CE9FA328285884A200E30F10 /* StyleAssembly.swift in Sources */,
 				CE9FA8DA2858858400E30F10 /* HomeInteractable.swift in Sources */,
@@ -1730,7 +1720,6 @@
 				CE9FA7CF2858858200E30F10 /* SplashViewModel.swift in Sources */,
 				CE9FA32B285884A200E30F10 /* RootDependency.swift in Sources */,
 				CE9FA3A12858851100E30F10 /* NavigationBarManager.swift in Sources */,
-				CE9FA7D72858858200E30F10 /* SplashInteractable.swift in Sources */,
 				CE0BEB9C28599176000A2CFA /* WeatherForecastRepository.swift in Sources */,
 				CE9FA329285884A200E30F10 /* UsecaseAssembly.swift in Sources */,
 				CE9FA210285882AE00E30F10 /* CommonApiCode.swift in Sources */,
@@ -1760,7 +1749,6 @@
 				CE9F9FF42858816D00E30F10 /* SceneDelegate.swift in Sources */,
 				CE9FA3852858851100E30F10 /* SearchBarDelegate.swift in Sources */,
 				CE9FA2D5285882AE00E30F10 /* Dependency.swift in Sources */,
-				CE9FA8062858858300E30F10 /* TabbarInteractable.swift in Sources */,
 				CE9FA215285882AE00E30F10 /* ParameterEncoder.swift in Sources */,
 				CE9FA3A32858851100E30F10 /* NDefaultView.swift in Sources */,
 				CE9FA3A82858851100E30F10 /* NMainView.swift in Sources */,
@@ -1786,7 +1774,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9FA0092858816F00E30F10 /* WeatherForecastTests.swift in Sources */,
+				CE0BEBB12859CF25000A2CFA /* HomeViewModelTest.swift in Sources */,
+				CE0BEBB32859CFEE000A2CFA /* HomeInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2004,15 +1993,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5934F7X3NB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = thinh.nguyen.WeatherForecastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherForecast.app/WeatherForecast";
@@ -2025,15 +2022,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5934F7X3NB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = thinh.nguyen.WeatherForecastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherForecast.app/WeatherForecast";

@@ -6,13 +6,7 @@ import RxCocoa
 final class TabbarCoordinator: BaseCoordinator<Void, TabbarDependency> {
     var homeCoordinator: HomeCoordinator?
     let navigationController: UINavigationController
-    
     let homeNavigationController = UINavigationController()
-    let bagNavigationController = UINavigationController()
-    let categoriesNavigationController = UINavigationController()
-    let notificationNavigationController = UINavigationController()
-    let profileNavigationController = UINavigationController()
-    
     let viewModel: TabbarViewModel
     
     init(navigationController: UINavigationController, dependency: TabbarDependency) {
@@ -47,7 +41,6 @@ final class TabbarCoordinator: BaseCoordinator<Void, TabbarDependency> {
         controller.tabBar.unselectedItemTintColor = ProjectColor.gray.value
         
         coordinateToHome()
-        controller.delegate = self
         
         let window = getUIWindow()!
         window.rootViewController = controller
@@ -60,12 +53,5 @@ final class TabbarCoordinator: BaseCoordinator<Void, TabbarDependency> {
         homeCoordinator?.start()
             .drive(onNext: { _ in })
             .disposed(by: disposeBag)
-    }
-}
-
-extension TabbarCoordinator: UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("SelectedIndex: \(tabBarController.selectedIndex)")
-        coordinateToHome()
     }
 }

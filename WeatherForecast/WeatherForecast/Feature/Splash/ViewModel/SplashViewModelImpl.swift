@@ -3,14 +3,7 @@ import RxSwift
 import RxCocoa
 
 final class SplashViewModelImpl: BaseViewModelImpl {
-    private let interactor: SplashInteractable
-    
     private let pushToDashboardSubject = PublishSubject<Void>()
-    
-    init(interactor: SplashInteractable) {
-        self.interactor = interactor
-        super.init(interactor: interactor)
-    }
 }
 
 // MARK: SplashStreamFlow

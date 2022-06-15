@@ -21,3 +21,10 @@ class CityCoordinateInfo {
         self.lat = 0
     }
 }
+
+// MARK: - Equatable
+extension CityCoordinateInfo: Equatable {
+    static func == (lhs: CityCoordinateInfo, rhs: CityCoordinateInfo) -> Bool {
+        return lhs.lon == rhs.lon && lhs.lat == rhs.lat
+    }
+}
